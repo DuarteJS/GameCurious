@@ -1,35 +1,41 @@
+
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 .container-grid{
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+   padding: 0 250px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: 100vw;
 }
 body{
+    position: absolute;
     background-color: black;
-
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
 }
+
 .parallax-banner {
     position: relative;
     width: 100%;
-    height: 100vh;
-    background-image: url('../img/banner.webp');
+    height: 85vh;
+    background-image: url('../img/Banner\ permanente.png');
 
     /* fixa a imagem */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     color: white;
-    font-size: 2rem;
+    font-size: 35px;
 }
 
 .overlay {
@@ -39,10 +45,11 @@ body{
     background: rgba(0, 0, 0, 0.5); 
 }
 
-.parallax-banner h1, .parallax-banner p {
+.parallax-banner h1{
     position: relative;
     /*  */
     z-index: 2;
+    font-family: "Anton";
 
 }
 
@@ -52,9 +59,58 @@ body{
 
 header{
     color: white;
-    height: 149px;
+    height: 150px;
     width: 100%;
     display: flex;
-   justify-content: space-between;
-   align-items: center;  
+    justify-content: space-between;
+    align-items: center;  
+
+    overflow-y: fixed;
+
+
+    
+
+
+}
+header nav a{
+    font-family: "Anton";    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 150px;
+
+
+}
+    
+button{
+    background-color: hsl(47, 100%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 115px;
+    height: 90px;
+    border-radius: 7px;
+
+
+}
+button h2{
+    
+    font-family: "Anton";
+    font-size: 30px;
+ 
+    
+}
+.parallax-banner {
+    display: flex;
+ 
+    align-items: center;
+}
+.parallax-banner h1{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.parallax-banner h1 span{
+    margin-left: 100px;
 }

@@ -1,6 +1,3 @@
-
-
-
 * {
     padding: 0;
     margin: 0;
@@ -70,7 +67,7 @@ button h2{
 .parallax-banner {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     background-image: url('../Assets/img/Jogos/Banner\ permanente.png');
 
     /* fixa a imagem */ 
@@ -121,14 +118,27 @@ button h2{
 .Jogos, h2{
     margin: 100px 0;
 }
-.Jogos, img{
+.Jogos, .jogo1, .jogo2, .jogo3, .jogo4, .jogo5, .jogo6, .jogo7   {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    width: 450px;
+    /* width: 80;
     height: 250px;
-}
+   */
+} 
 
+.Curiosidades{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.Curiosidades, #microsoft{
+    width: 959px;
+    height: 477px;
+}
+.Curiosidades, p{
+
+}
 
 footer{
     color: white;
